@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /images
-Disallow: /assets
-
 Sitemap: https://leons.dev/sitemap.xml
