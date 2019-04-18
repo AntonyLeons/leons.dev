@@ -12,7 +12,6 @@ install:
 script:
   # Build our site
   - binaries/hugo
-  # Create a CNAME file which maps our site to our custom domain
   - echo 'leons.dev' > public/CNAME
 
 # Deploy to GitHub pages
@@ -20,7 +19,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   # Our token is set in travis-ci.org dashboard
-  github_token: $GITHUB_TOKEN
+  github_token: $GH_TOKEN
   local_dir: public
   on:
     branch: master
