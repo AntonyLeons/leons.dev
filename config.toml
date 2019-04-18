@@ -1,0 +1,122 @@
+# Site settings
+baseurl = "" #without ending slash
+languageCode = "en-us"
+title = "Antony Leons"
+
+# Disable unnecessary kinds
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+# Enter your tracking code to enable Google Analytics
+#googleAnalytics = "UA-135515365-1"
+
+[params]
+
+  # Images settings
+  # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
+  # You may place your images in corresponding folders and then set only filenames below to
+  # change page's appearance
+
+  # Site icons
+  favicon_ico = "favicon.ico"
+  favicon_ico_sizes = "16x16 32x32"
+  appleicon = "apple.png"
+
+  # Additional options to supplement icons served
+  #favicon_png = "favicon.png"
+  #favicon_png_sizes = "96x96"
+  #favicon_svg = "favicon.svg"
+
+  # Link custom assets relative to /static
+  #custom_js  = [""]
+  #custom_css = ["background.css", "icons.css"]
+
+  # Customization switches
+  # Overwrite FontAwesome: see icons.css
+  #custom_icons = true
+  # Overwrite background: see background.css
+  #custom_background = true
+  description = "Antony Leons' personal site with links to his blog, CV and mail, also a showcase to potential employers and clients"
+
+  # Personal data
+  [params.personal]
+    # If name is not set, author is used
+    name = "Antony Leons"
+    # Avatars can be written to images/avatars/
+    avatar = "antony.jpg"
+    position = "Computer Science"
+    livesIn = "[Hull, UK](https://goo.gl/maps/8Hj1NPc26a52)"
+    scope = [
+        "Computer Science Student at UoH",
+        "Maintainer of leons.dev",
+        "Looking to do a masters or a job in industry"
+      ]
+    biography = """I'm a Computer Scientist with a love for technology and the internet"""
+
+  # Contact form settings
+
+ # [params.contact]
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+   # email = "antony@leons.dev"
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+
+    #postURL = "https://example.com/mailout/"
+
+  #  enable = true
+  #  title = "Contact Me!"
+  #  namePlaceholder = "Name"
+  #  emailPlaceholder = "Email"
+  #  messagePlaceholder = "Message"
+  #  buttonText = "Send"
+  #  success = "Thank you for contacting me."
+  # error = "Message could not be send. Please contact me at antony@leons.dev"
+
+    # Google invisible captcha
+   # [params.contact.captcha]
+   # sitekey = "6Lfj_JcUAAAAANQ4PsOKYRdeDOTujHD8N8NWcp55"
+
+
+    # Add optional form fields to identify contact forms.
+    #[[params.contact.fields.hidden]]
+    #  name = "someID"
+    #  value = "example.com"
+
+    #[[params.contact.fields.hidden]]
+    # Special values for name such as "page" and "site" will be autofilled
+    #  name = "page"
+
+  # Social settings
+  # You may change these with your social links or add others
+
+  [[params.social]]
+    title = "Blog"
+    icon = "fa-rss"
+    link = "https://blog.leons.dev"
+    target = "_blank"
+    rel="noreferrer"
+ [[params.social]]
+    title = "Mail"
+    icon = "fa-envelope-o"
+    link = "mailto:antony@leons.dev"
+    target = "_blank"
+    rel="noreferrer"
+  [[params.social]]
+    title = "CV"
+    icon = "fa-file-text-o"
+    link = "https://cv.leons.dev"
+    target = "_blank"
+    rel="noreferrer"
