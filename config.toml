@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "" #without ending slash
+baseurl = "https://leons.dev" #without ending slash
 languageCode = "en-us"
 title = "Antony Leons"
 
