@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ partial "header.html" . }}
+  <body class="is-loading">
+
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Main -->
+          <section id="main">
+            <header>
+              <h1>404</h1>
+
+            </header>
+
+            <footer>
+              <ul class="icons">
+                {{ range .Site.Params.social }}
+                  <li><a href="{{ .link }}" class="{{ .icon }}" target="{{ .target | default "_self" }}" rel="{{ .rel }}">{{ .title }}</a></li>
+                {{ end }}
+              </ul>
+              {{ if .Site.Params.contact.enable }}
+                {{ partial "contact.html" . }}
+              {{ end }}
+            </footer>
+			<img src="images/icons/logo.png" alt="logo" height="130" width="130" >
+          </section>
+
+        <!-- Footer -->
+          {{ partial "footer.html" . }}
+
+      </div>
+    {{ partial "footer_scripts.html" . }}
+  </body>
+</html>

@@ -5,8 +5,6 @@ addons:
       - python-pygments
 
 # Clean and don't fail
-before_install:
-  - chmod +x binaries/hugo
 install:
   - rm -rf public || exit 0
 

@@ -4,11 +4,15 @@ languageCode = "en-us"
 title = "Antony Leons"
 
 # Disable unnecessary kinds
-disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS"]
 
 # Enter your tracking code to enable Google Analytics
 #googleAnalytics = "UA-135515365-1"
-
+enableRobotsTXT =true
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 1
 [params]
 
   # Images settings
