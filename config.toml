@@ -12,7 +12,7 @@ enableRobotsTXT =true
 [sitemap]
   changefreq = "monthly"
   filename = "sitemap.xml"
-  priority = 1
+  priority = "1"
 [params]
 
   # Images settings

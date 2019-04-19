@@ -1,3 +1,4 @@
+dist: xenial
 # Install the apt prerequisites
 addons:
   apt:
