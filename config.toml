@@ -89,7 +89,7 @@ enableRobotsTXT =true
     success = "Thank you for contacting me."
     error = "Message could not be send. Please contact me at antony@leons.dev"
 
-     Google invisible captcha
+    # Google invisible captcha
     [params.contact.captcha]
     sitekey = "6Lfj_JcUAAAAANQ4PsOKYRdeDOTujHD8N8NWcp55"
 
