@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://leons.dev" #without ending slash
-languageCode = "en-us"
-title = "Antony Leons"
+languageCode = "en-gb"
+title = "Antony Leons - Tech Enthusiast, Coder and Investor"
 
 # Disable unnecessary kinds
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS"]
@@ -50,11 +50,11 @@ enableRobotsTXT =true
     position = "Computer Science"
     livesIn = "[Hull, UK](https://goo.gl/maps/8Hj1NPc26a52)"
     scope = [
-        "Computer Science Student at UoH",
+        "Tech Enthusiast, Coder and Investor",
         "Maintainer of leons.dev",
-        "Looking to do a masters or a job in industry"
+        "Looking for a graduate placement in 2020"
       ]
-    biography = """I'm a Computer Scientist with a love for technology and the internet"""
+    biography = "I love technology and I'm an advocate for web apps, cloud computing and Fintech with a tech heavy investment portfolio"
 
   # Contact form settings
 
