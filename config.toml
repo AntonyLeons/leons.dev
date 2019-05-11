@@ -108,19 +108,19 @@ enableRobotsTXT =true
 
   [[params.social]]
     title = "Blog"
-    icon = "fa-rss"
+    icon = "fab fa-btc"
     link = "https://blog.leons.dev"
     target = "_blank"
     rel="noreferrer"
  [[params.social]]
     title = "Mail"
-    icon = "fa-envelope-o"
+    icon = "far fa-envelope"
     link = "mailto:antony@leons.dev"
     target = "_blank"
     rel="noreferrer"
   [[params.social]]
     title = "CV"
-    icon = "fa-file-text-o"
+    icon = "far fa-address-card"
     link = "https://cv.leons.dev"
     target = "_blank"
     rel="noreferrer"
