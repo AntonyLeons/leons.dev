@@ -1,4 +1,4 @@
-dist: xenial
+dist: bionic
 # Install the apt prerequisites
 addons:
   apt:
