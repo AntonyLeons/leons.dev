@@ -15,7 +15,7 @@ install:
 script:
   # Build our site
   - binaries/hugo
-  - echo 'www.leons.dev\nleons.dev' > public/CNAME
+  - echo -e 'www.leons.dev\nleons.dev' > public/CNAME
 
 # Deploy to GitHub pages
 deploy:
