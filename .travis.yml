@@ -1,28 +1,37 @@
-dist: bionic
-# Install the apt prerequisites
-addons:
-  apt:
-    packages:
-      - python-pygments
-
-# Clean and don't fail
-before_install:
-  - chmod +x binaries/hugo
-install:
-  - rm -rf public || exit 0
-
-# Build the website
-script:
-  # Build our site
-  - binaries/hugo
-  - echo -e 'leons.dev' > public/CNAME
-
-# Deploy to GitHub pages
-deploy:
-  provider: pages
-  skip_cleanup: true
-  # Our token is set in travis-ci.org dashboard
-  github_token: $GH_TOKEN
-  local_dir: public
-  on:
-    branch: master
+{
+  "language": "ruby",
+  "os": [
+    "linux"
+  ],
+  "dist": "bionic",
+  "addons": {
+    "apt": {
+      "packages": [
+        "python-pygments"
+      ]
+    }
+  },
+  "before_install": [
+    "chmod +x binaries/hugo"
+  ],
+  "install": [
+    "rm -rf public || exit 0"
+  ],
+  "script": [
+    "binaries/hugo",
+    "echo -e 'leons.dev' > public/CNAME"
+  ],
+  "deploy": [
+    {
+      "provider": "pages",
+      "skip_cleanup": true,
+      "local_dir": "public",
+      "on": {
+        "branch": [
+          "master"
+        ]
+      },
+      "token": "$GH_TOKEN"
+    }
+  ]
+}
