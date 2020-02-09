@@ -5,6 +5,19 @@
   <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
   <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
   <link rel="canonical" href="https://leons.dev/" />
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5e397c76a89cda5a18841146/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
   {{ if .Site.Params.favicon_ico }}
     <link rel="icon" href="{{ .Site.Params.favicon_ico | printf "/images/icons/%s" | relURL  }}" type="image/x-icon" {{ if .Site.Params.favicon_ico_sizes }}sizes="{{ .Site.Params.favicon_ico_sizes  }}"{{ end }} />
   {{ end }}
