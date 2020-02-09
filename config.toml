@@ -36,9 +36,9 @@ enableRobotsTXT =true
 
   # Customization switches
   # Overwrite FontAwesome: see icons.css
-  #custom_icons = true
+  # custom_icons = true
   # Overwrite background: see background.css
-  #custom_background = true
+  # custom_background = true
   description = "Antony Leons' personal site with links to his blog, CV and mail, also a showcase to potential employers and clients"
 
   # Personal data
