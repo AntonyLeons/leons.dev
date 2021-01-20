@@ -1,8 +1,7 @@
 {
+  "arch": "arm"
   "language": "ruby",
-  "os": [
-    "linux"
-  ],
+  "os": "linux"
   "dist": "bionic",
   "addons": {
     "apt": {
