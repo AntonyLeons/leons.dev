@@ -1,5 +1,5 @@
 {
-  "arch": "arm"
+  "arch": "arm",
   "language": "ruby",
   "os": "linux"
   "dist": "bionic",
