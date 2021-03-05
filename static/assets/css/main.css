@@ -548,10 +548,10 @@ button,
   -webkit-transform: rotateX(0deg);
   -ms-transform: rotateX(0deg);
   transform: rotateX(0deg);
-  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
-  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease; }
+  -moz-transition: opacity 0.5 ease, -moz-transform 0.5 ease;
+  -webkit-transition: opacity 0.5 ease, -webkit-transform 0.5 ease;
+  -ms-transition: opacity 0.5 ease, -ms-transform 0.5 ease;
+  transition: opacity 0.5 ease, transform 0.5 ease; }
   #main .avatar {
     position: relative;
     display: block;

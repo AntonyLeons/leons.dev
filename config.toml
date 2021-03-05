@@ -111,18 +111,15 @@ enableRobotsTXT =true
     link = "https://blog.leons.dev"
     target = "_blank"
     rel = "noreferrer"
-    aria-hidden = "false"
  [[params.social]]
     title = "Mail"
     icon = "far fa-envelope"
     link = "mailto:antony@leons.dev"
     target = "_blank"
     rel = "noreferrer"
-    aria-hidden = "false"
   [[params.social]]
     title = "CV"
     icon = "far fa-address-card"
     link = "https://cv.leons.dev"
     target = "_blank"
     rel = "noreferrer"
-    aria-hidden = "false"
