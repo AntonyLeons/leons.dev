@@ -106,7 +106,7 @@ body, input, select, textarea {
   font-size: 14pt;
   font-weight: 300;
   line-height: 2;
-  letter-spacing: 0.2em; }
+  letter-spacing: 0.1em; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
       font-size: 11pt; } }
@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 1.85em;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.15em;
   margin: 0 0 0.525em 0; }
   h1.name {
     text-transform: uppercase; }
