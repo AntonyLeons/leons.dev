@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url("source-sans-pro-300-family.css");
 
-body,html {
-  height:100%;
+body {
+  height:100vh;
   margin: 0;
   background: rgb(2,0,36);
   background: -moz-linear-gradient(333deg, rgba(2,0,36,1) 0%, rgba(119,9,121,1) 26%, rgba(0,212,255,1) 100%);
@@ -10,7 +10,7 @@ body,html {
   background: linear-gradient(333deg, rgba(2,0,36,1) 0%, rgba(119,9,121,1) 26%, rgba(0,212,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
 }
-html, body, input, textarea, select, button {
+ input, textarea, select, button {
   border-color: #575757;
   color: #e8e7e3;
 }
@@ -23,14 +23,7 @@ table {
 ::placeholder {
   color: #b9b4ac;
 }
-::selection {
-  background-color: #005ccc;
-  color: #ffffff;
-}
-::-moz-selection {
-  background-color: #005ccc;
-  color: #ffffff;
-}
+
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -188,53 +181,6 @@ hr {
   border: 0;
   border-bottom: solid 1px #575757;
   margin: 1.5em 0; }
-
-/* Form */
-form {
-  margin: 0 0 1.5em 0; }
-  form > .field {
-    margin: 0 0 1.5em 0; }
-    form > .field > :last-child {
-      margin-bottom: 0; }
-
-label {
-  color: #ffffff;
-  display: block;
-  font-size: 0.9em;
-  margin: 0 0 0.75em 0; }
-
-
-
-.select-wrapper {
-  text-decoration: none;
-  display: block;
-  position: relative; }
-  .select-wrapper:before {
-    content: "";
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important; }
-  .select-wrapper:before {
-    color: #c8cccf;
-    display: block;
-    height: 2.75em;
-    line-height: 2.75em;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 2.75em; }
-  .select-wrapper select::-ms-expand {
-    display: none; }
-
-
-
-textarea {
-  padding: 0.75em 1em; }
-
 
 /* Icon */
 .icon {
@@ -430,6 +376,7 @@ dl {
 
 /* Wrapper */
 #wrapper {
+  height: 100%;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -452,6 +399,17 @@ dl {
   perspective: 1000px;
   position: relative;
   min-height: 100%;
-  padding: 1.5em;
-  z-index: 2; }
-
+  z-index: 1; }
+  #wrapper > * {
+    z-index: 1; }
+  #wrapper:before {
+    content: '';
+    display: flex; }
+  @media (max-width: 540px) {
+    body{
+      height: auto;
+    }
+    #wrapper {
+      padding: 1em; } }
+  body.is-ie #wrapper {
+    height: 100%; }
