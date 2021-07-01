@@ -47,13 +47,13 @@ enableRobotsTXT =true
     name = "Antony Leons"
     # Avatars can be written to images/avatars/
     avatar = "antony.jpg"
-    position = "Computer Science"
+    position = "Software Developer"
     livesIn = "[Hull, UK](https://goo.gl/maps/8Hj1NPc26a52)"
     scope = [
-        "Tech Enthusiast, Coder and Investor",
-        "Maintainer of leons.dev",
+        "Tech Enthusiast, and Coder",
+        "Currently Dev @ AngloAmerican",
       ]
-    biography = "I love technology and I'm an advocate for web apps, cloud computing and Fintech with a tech heavy investment portfolio"
+    biography = "I'm an advocate for Flutter, Fintech and looking Machine Machine learning"
 
   # Contact form settings
 
