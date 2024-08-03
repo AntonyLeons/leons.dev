@@ -6,7 +6,7 @@ body {
   margin: 0;
   background: linear-gradient(333deg, rgba(0, 48, 73, 1) 0%, rgba(56, 183, 193, 1) 50%, rgba(255, 209, 102, 1) 100%);
   background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+  animation: gradientAnimation 6s ease infinite;
   position: relative;
   overflow: hidden;
 }
