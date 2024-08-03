@@ -5,8 +5,8 @@ body {
   height: 100vh;
   margin: 0;
   background: linear-gradient(333deg, rgba(0, 48, 73, 1) 0%, rgba(56, 183, 193, 1) 50%, rgba(255, 209, 102, 1) 100%);
-  background-size: 400% 400%;
-  animation: gradientAnimation 6s ease infinite;
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite;
   position: relative;
   overflow: hidden;
 }
@@ -14,7 +14,9 @@ body {
 /* Gradient animation */
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
   50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
   100% { background-position: 0% 50%; }
 }
 
@@ -30,7 +32,6 @@ body::before {
   mix-blend-mode: overlay;
   z-index: 1;
 }
-
 
 input, textarea, select, button {
   border-color: #575757;
