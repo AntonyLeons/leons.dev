@@ -25,8 +25,6 @@
   <!-- <script src="{{ "assets/js/contact.js" | absURL }}" async defer></script> -->
 {{ end }}
 
-{{ template "_internal/google_analytics_async.html" . }}
-
 {{ if .Site.Params.analytics.piwik }}
   {{ partial "_analytics/piwik.html" . }}
 {{ end }}
