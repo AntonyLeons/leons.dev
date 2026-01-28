@@ -31,7 +31,7 @@ enableRobotsTXT =true
   #favicon_svg = "favicon.svg"
 
   # Link custom assets relative to /static
-  #custom_js  = [""]
+  custom_js  = ["assets/js/anim.js"]
   #custom_css = ["background.css", "icons.css"]
 
   # Customization switches
@@ -50,7 +50,6 @@ enableRobotsTXT =true
     position = "Software Developer"
     livesIn = "[Hull, UK](https://goo.gl/maps/8Hj1NPc26a52)"
     scope = [
-        "Tech Enthusiast, and Coder",
         "Currently Dev @ CGI",
       ]
     biography = "I'm an advocate for Cloud, Flutter, and Generative AI."

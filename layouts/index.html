@@ -1,57 +1,62 @@
 <!DOCTYPE HTML>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
   {{ partial "header.html" . }}
-  <body class="is-loading">
+  <body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+      <main class="card">
+        <header class="card-header animate-in">
+          <div class="avatar-container">
+            <img src="{{ .Site.Params.personal.avatar | printf "/images/avatars/%s" | relURL }}" alt="avatar" class="avatar" />
+            <div class="avatar-glow"></div>
+          </div>
+          
+          <h1 class="name animate-in">
+            {{ with .Site.Params.personal.name }}
+              {{ . }}
+            {{ else }}
+              {{ .Site.Params.author }}
+            {{ end }}
+          </h1>
 
-    <!-- Wrapper -->
-      <div id="wrapper">
+          {{ with .Site.Params.personal.position }}
+            <h2 class="position animate-in">{{ . | markdownify }}</h2>
+          {{ end }}
+        </header>
 
-        <!-- Main -->
-          <section id="main">
-            <header>
-              <span class="avatar"><img src="{{ .Site.Params.personal.avatar | printf "/images/avatars/%s" | relURL  }}" alt="avatar" height="130" width="130" ></span>
-              <h1 class="name">
-                {{ with .Site.Params.personal.name }}
-                  {{ . }}
-                {{ else }}
-                  {{ .Site.Params.author }}
-                {{ end }}
-              </h1>
-              {{ with .Site.Params.personal.livesIn }}
-                <h5 class=location>Lives in {{ . | markdownify }}</h5>
-              {{ end }}
+        <section class="card-body animate-in">
+          {{ with .Site.Params.personal.livesIn }}
+            <p class="location">📍 {{ . | markdownify }}</p>
+          {{ end }}
 
-              {{ with .Site.Params.personal.position }}
-                <h2 class="position">{{ . | markdownify }}</h2>
-              {{ end }}
+          {{ with .Site.Params.personal.biography }}
+            <p class="biography">{{ . | markdownify }}</p>
+          {{ end }}
 
-              {{ with .Site.Params.personal.scope }}
-              <ul>
-                {{ range . }}
-                  <li>{{ . | markdownify }}</li>
-                {{ end }}
-              </ul>
-              {{ end }}
+          {{ with .Site.Params.personal.scope }}
+          <div class="tags animate-in">
+            {{ range . }}
+              <span class="tag">{{ . | markdownify }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
 
-              {{ with .Site.Params.personal.biography }}
-                <span class="biography">{{ . | markdownify }}</span>
-              {{ end }}
-            </header>
+        </section>
 
-            <footer>
-              <ul class="icons">
-                {{ range .Site.Params.social }}
-                  <li><a href="{{ .link }}" class="{{ .icon }}" target="{{ .target | default "_self" }}" rel="{{ .rel }}">{{ .title }}</a></li>
-                {{ end }}
-              </ul>
-            </footer>
+        <footer class="card-footer animate-in">
+          <div class="social-links">
+            {{ range .Site.Params.social }}
+              <a href="{{ .link }}" class="social-btn" target="{{ .target | default "_self" }}" rel="{{ .rel }}" aria-label="{{ .title }}">
+                <i class="{{ .icon }}"></i>
+              </a>
+            {{ end }}
+          </div>
+          
+        </footer>
+      </main>
+    </div>
 
-          </section>
-
-        <!-- Footer -->
-          {{ partial "footer.html" . }}
-
-      </div>
     {{ partial "footer_scripts.html" . }}
   </body>
 </html>
