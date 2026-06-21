@@ -26,8 +26,8 @@ enableRobotsTXT =true
   appleicon = "apple.png"
 
   # Additional options to supplement icons served
-  #favicon_png = "favicon.png"
-  #favicon_png_sizes = "96x96"
+  favicon_png = "favicon.png"
+  favicon_png_sizes = "512x512"
   #favicon_svg = "favicon.svg"
 
   # Link custom assets relative to /static
